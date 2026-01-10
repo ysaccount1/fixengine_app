@@ -1,0 +1,31 @@
+# Image Assets Placeholder
+
+This directory should contain the following image assets for the FixEngine.app website:
+
+## Required Images:
+- favicon.ico (16x16, 32x32, 48x48 px)
+- apple-touch-icon.png (180x180 px)
+- og-image.jpg (1200x630 px) - For social media sharing
+- hero-phone-mockup.png (Optional - can use CSS mockup)
+- feature-icons/ (Optional - using Font Awesome icons instead)
+
+## Image Optimization:
+- Use WebP format for better compression
+- Optimize all images for web (compress without losing quality)
+- Use appropriate sizes for different screen densities
+- Consider lazy loading for images below the fold
+
+## Placeholder Images:
+For now, the website uses:
+- Font Awesome icons for all iconography
+- CSS-generated phone mockup
+- Gradient backgrounds instead of image backgrounds
+- Emoji icons for appliance categories
+
+## To Add Real Images:
+1. Replace placeholder.txt with actual image files
+2. Update image paths in HTML if needed
+3. Add proper alt text for accessibility
+4. Test loading performance
+
+The website is fully functional without custom images, using modern CSS and icon fonts instead.

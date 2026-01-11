@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Data - FixEngine</title>
+    <meta name="description" content="Learn how to delete your personal data from FixEngine. Manage your privacy and data retention preferences.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .delete-data-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .delete-data-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 100px;
+        }
+        
+        .delete-data-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .delete-data-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .delete-data-content h2 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .delete-data-content h3 {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+        
+        .delete-data-content p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        .delete-data-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .delete-data-content li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .delete-data-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .info-box {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 4px solid #fdcb6e;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .warning-box .warning-icon {
+            color: #e17055;
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+        
+        .steps-container {
+            margin: 2rem 0;
+        }
+        
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .step-number {
+            background: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .step-content h4 {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .step-content p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-to-home:hover {
+            color: var(--primary-dark);
+        }
+        
+        .contact-section {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .contact-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-section .btn {
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tools"></i>
+                <span>FixEngine</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#demo" class="nav-link cta-button">Try Demo</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="delete-data-container">
+        <div class="delete-data-header">
+            <h1 class="delete-data-title">Delete Your Data</h1>
+            <p class="delete-data-subtitle">
+                Take control of your privacy. Learn how to delete your personal data from FixEngine and manage your account preferences.
+            </p>
+        </div>
+
+        <a href="index.html" class="back-to-home">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="delete-data-content">
+            <p>At FixEngine, we respect your privacy and give you full control over your personal data. You can delete your data at any time through your profile settings in the app or by contacting our support team.</p>
+
+            <div class="warning-box">
+                <p><i class="fas fa-exclamation-triangle warning-icon"></i><strong>Important:</strong> Deleting your data is permanent and cannot be undone. Make sure to export any important diagnostic reports or information before proceeding.</p>
+            </div>
+
+            <h2>How to Delete Your Data</h2>
+            
+            <h3>Method 1: Through Your Profile (Recommended)</h3>
+            <p>The easiest way to delete your data is directly through the FixEngine app:</p>
+            
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Open the FixEngine App</h4>
+                        <p>Launch the FixEngine app on your mobile device and make sure you're signed in to your account.</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Go to Your Profile</h4>
+                        <p>Tap on your profile icon or navigate to the "Profile" section in the app menu.</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Access Privacy Settings</h4>
+                        <p>Look for "Privacy & Data" or "Account Settings" in your profile menu.</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Select "Delete My Data"</h4>
+                        <p>Find and tap on the "Delete My Data" or "Delete Account" option.</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Confirm Deletion</h4>
+                        <p>Review what will be deleted and confirm your decision. You may need to enter your password or verify your identity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Method 2: Contact Support</h3>
+            <p>If you're unable to access your account or prefer assistance, you can contact our support team:</p>
+            
+            <div class="info-box">
+                <p><strong>Email:</strong> support@fixengine.app</p>
+                <p><strong>Subject:</strong> Data Deletion Request</p>
+                <p><strong>Include:</strong> Your registered email address and reason for deletion (optional)</p>
+            </div>
+
+            <h2>What Gets Deleted</h2>
+            <p>When you delete your data, the following information will be permanently removed:</p>
+            <ul>
+                <li><strong>Account Information:</strong> Email address, profile details, and authentication data</li>
+                <li><strong>Diagnostic Data:</strong> All diagnostic reports, notes, and troubleshooting history</li>
+                <li><strong>Uploaded Media:</strong> Photos, videos, and other files you've uploaded</li>
+                <li><strong>Usage Data:</strong> App usage statistics and preferences</li>
+                <li><strong>Communication History:</strong> Support tickets and correspondence</li>
+            </ul>
+
+            <h2>What Happens After Deletion</h2>
+            <ul>
+                <li>Your account will be immediately deactivated</li>
+                <li>All personal data will be deleted within 30 days</li>
+                <li>You'll receive a confirmation email once deletion is complete</li>
+                <li>You won't be able to recover your data after this process</li>
+            </ul>
+
+            <h2>Data Retention for Legal Compliance</h2>
+            <p>In some cases, we may need to retain certain information for legal or regulatory compliance:</p>
+            <ul>
+                <li>Transaction records (for tax and accounting purposes)</li>
+                <li>Legal dispute documentation</li>
+                <li>Fraud prevention records</li>
+            </ul>
+            <p>This data is kept secure and separate from active systems and will be deleted once the retention period expires.</p>
+
+            <h2>Alternative Options</h2>
+            <p>Before deleting your data completely, consider these alternatives:</p>
+            <ul>
+                <li><strong>Export Your Data:</strong> Download your diagnostic reports and data before deletion</li>
+                <li><strong>Deactivate Account:</strong> Temporarily disable your account without deleting data</li>
+                <li><strong>Adjust Privacy Settings:</strong> Limit data collection while keeping your account active</li>
+            </ul>
+
+            <div class="contact-section">
+                <h3>Need Help?</h3>
+                <p>If you have questions about data deletion or need assistance, our support team is here to help.</p>
+                <a href="mailto:support@fixengine.app" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Contact Support
+                </a>
+                <a href="privacy.html" class="btn btn-outline">
+                    <i class="fas fa-shield-alt"></i>
+                    View Privacy Policy
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-tools"></i>
+                        <span>FixEngine</span>
+                    </div>
+                    <p class="footer-description">
+                        Revolutionary AI-powered platform for appliance troubleshooting. 
+                        Fix any appliance with confidence.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#demo">Demo</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 FixEngine. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="delete-data.html">Delete Data</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

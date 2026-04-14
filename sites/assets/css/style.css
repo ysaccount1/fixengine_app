@@ -141,6 +141,12 @@ p {
     color: #333;
 }
 
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+}
+
 .nav-logo i {
     color: #667eea;
     font-size: 28px;
@@ -245,6 +251,64 @@ p {
     gap: 2rem;
 }
 
+/* App Download Badges */
+.app-download-badges {
+    margin-bottom: 2rem;
+}
+
+.download-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.badge-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.store-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 18px;
+    background: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.store-badge:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.store-badge i {
+    font-size: 1.5rem;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.badge-small {
+    font-size: 0.6rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-big {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .stat {
     text-align: center;
 }
@@ -263,114 +327,28 @@ p {
     letter-spacing: 0.5px;
 }
 
-/* Phone Mockup */
+/* Video Container */
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.phone-mockup {
-    width: 300px;
-    height: 600px;
-    background: #333;
-    border-radius: 30px;
-    padding: 20px;
+.video-container {
+    width: 280px;
+    height: 580px;
+    border-radius: 28px;
+    overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    position: relative;
+    background: #000;
+    flex-shrink: 0;
 }
 
-.phone-screen {
+.hero-video {
     width: 100%;
     height: 100%;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-}
-
-.app-interface {
-    padding: 20px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.app-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.app-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #667eea;
-    margin-bottom: 5px;
-}
-
-.app-subtitle {
-    font-size: 16px;
-    color: #666;
-}
-
-.diagnostic-steps {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.step {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    border-radius: 10px;
-    background: #f8f9fa;
-    transition: all 0.3s ease;
-}
-
-.step.completed {
-    background: #e8f5e8;
-    color: #2d5a2d;
-}
-
-.step.completed i {
-    color: #28a745;
-}
-
-.step.active {
-    background: #e3f2fd;
-    color: #1565c0;
-    border: 2px solid #2196f3;
-}
-
-.step.active i {
-    color: #2196f3;
-}
-
-.confidence-meter {
-    margin-top: 20px;
-}
-
-.confidence-label {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.confidence-bar {
-    height: 8px;
-    background: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.confidence-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #28a745, #20c997);
-    border-radius: 4px;
-    transition: width 0.3s ease;
+    object-fit: contain;
+    background: #000;
 }
 
 /* Floating Icons */
@@ -950,6 +928,12 @@ section {
     margin-bottom: 1rem;
 }
 
+.footer-logo-img {
+    height: 36px;
+    width: auto;
+    border-radius: 8px;
+}
+
 .footer-logo i {
     color: #667eea;
     font-size: 28px;
@@ -1076,13 +1060,22 @@ section {
         align-items: center;
     }
     
+    .badge-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .app-download-badges {
+        text-align: center;
+    }
+    
     .hero-stats {
         justify-content: center;
     }
     
-    .phone-mockup {
-        width: 250px;
-        height: 500px;
+    .video-container {
+        width: 240px;
+        height: 480px;
     }
     
     .features-grid {
@@ -1140,7 +1133,7 @@ section {
         font-size: 14px;
     }
     
-    .phone-mockup {
+    .video-container {
         width: 200px;
         height: 400px;
     }
